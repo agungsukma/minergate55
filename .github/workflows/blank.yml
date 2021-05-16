@@ -1,5 +1,5 @@
-name: minergate55
- 
+name: Windows-CRD
+
 on: 
   workflow_dispatch:
     inputs:
@@ -9,11 +9,11 @@ on:
       pincode:
         description: 'Six digit Pin'
         required: true
- 
+  
 jobs:
   build:
     runs-on: windows-latest
- 
+
     steps:
     - uses: actions/checkout@v2
     - name: Initializing Setup
